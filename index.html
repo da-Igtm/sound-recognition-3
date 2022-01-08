@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Sound Identification Web App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="header_div" class="text-center col-xs-12">
+        <h1 id="text_in_red">Animal sounds identifier</h1>
+      <p>Note : Play different animal sounds such as roar , bark , meow and moo to have animal images appearing .</p>
+    </div>
+    <div class="container main_div">
+        <br>
+        <br>
+        <center>
+  <button class="btn btn-warning" onclick="identifySound()">Start</button>
+  <h4 id="hearing_label">Sound belongs to - </h4>
+  <h3 id="confidence_label">Accuracy :</h3>
+  <img src="project-106-lion.jpg" id="animal_1" height="250" width="250">
+  <img src="project-106-cat.jpg" id="animal_2" height="250" width="250">
+  <img src="project-106-cow.jpg" id="animal_3" height="250" width="250">
+  <img src="project-106-dog.jpg" id="animal_4" height="250" width="250">
+        </center>
+        <br>
+        <br>
+      </div>
+      <span id="cow"></span>
+      <span id="lion"></span>
+      <span id="cat"></span>
+      <span id="dog"></span>
+      <div class="copy_size_footer text-center">Developed by Daksh</div>
+      <script src="main.js"></script>
+</body>
+</html>
